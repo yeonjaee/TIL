@@ -85,6 +85,9 @@ import re   # 정규 표현식 사용
 from bs4 import BeautifulSoup
 import unicodedata
 
+def select_first(driver):
+    first = driver.find_element_by_css_selector('div._9Ah0')
+    first.click()
 
 def get_content(driver):
     html = driver.page_source
