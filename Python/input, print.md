@@ -139,3 +139,12 @@ sys.stdout.write('how are you?')
 hello...how are you?
 ```
 
+
+
+- [How do I print a '%' sign using string formatting?](https://stackoverflow.com/questions/28343745/how-do-i-print-a-sign-using-string-formatting)
+
+```python
+출력을 10% 와 같이 하고 싶다면 print 문 안에 %를 2번 쓰면 된다.
+예) print('할인율: %d %%' % dc)
+```
+

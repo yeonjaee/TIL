@@ -223,7 +223,7 @@ import pandas as pd
 
 results_df = pd.DataFrame(results)
 results_df.columns = ['content','date','like','place','tags']
-results_df.to_excel(./crawling_jejudoMatJip.xlsx',index=False)
+results_df.to_excel('./crawling_jejudoMatJip.xlsx',index=False)
 ```
 
 ![image-20220202233418265](assets/subject05_1/image-20220202233418265.png)

@@ -98,7 +98,7 @@ data = find_places('제주공항')
 # 인스타 위치명에 대한 위치 정보 검색
 
 import time
-from tqdm.notebook import tqdm
+from tqdm import tqdm_notebook
 
 locations_inform = []
 

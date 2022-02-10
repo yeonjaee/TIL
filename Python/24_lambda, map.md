@@ -2,7 +2,7 @@
 
 ---
 
-**`lambda *arguments* : *expression*`**
+**`lambda *arguments* : *expression*`** (lambda 매개변수1, 매개변수2, ... : 수식)
 
 - 람다 함수는 익명 함수다.
 
@@ -37,13 +37,31 @@ Summarize argument a, b, and c and return the result:
 lambda a,b,c : a + b + c
 ```
 
+```python
+# 람다표현식으로 만들기
+lambda n1,n2 : n1+n2
 
+# 람다표현식 사용하기
+(lambda n1,n2 : n1+n2)(1,2)
+
+------------------------------------------------------------------------
+# 람다표현식을 프로그램 내에서 재사용하고 싶다면, 람다표현식을 변수에 담아서 사용한다.
+lambda_plus = lambda n1,n2 : n1+n2
+
+# 변수로 람다표현식 담아 호출하기
+print(lambda_plus(1,2))
+print(lambda_plus(3,4))
+```
 
 
 
 ### map()
 
 **`map(function, iterable, ...)`**
+
+- list(map(함수, 리스트))
+
+ - tuple(map(함수, 튜플))
 
 - | Parameter                                                    |
   | ------------------------------------------------------------ |
