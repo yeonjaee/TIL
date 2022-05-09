@@ -6,7 +6,7 @@
 
 로컬 저장소에서 ```git init``` 설정 후
 
-```
+```bash
 origin이라는 이름으로 원격 저장소 주소를 등록
 $ git remote add origin https://github.com/SeoulStrech/TIL.git
 
@@ -15,6 +15,8 @@ $ git remote -v
 
 원격 저장소 연결을 삭제하려면
 $ git remote rm <이름>` 혹은 `git remote remove <이름>`
+or
+$ git rm -rf .git
 ```
 
 ### [2] push
