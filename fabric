@@ -1,0 +1,16 @@
+// Do some initializing stuff
+fabric.Object.prototype.set({
+    transparentCorners: false,
+    cornerColor: 'rgba(102,153,255,0.5)',
+    cornerSize: 12,
+    padding: 5
+});
+
+// initialize fabric canvas and assign to global windows object for debug
+var canvas = new fabric.StaticCanvas('c');
+
+var json = '{"version":"3.6.3","objects":[{"type":"i-text","version":"3.6.3","originX":"left","originY":"top","left":100,"top":100,"width":579,"height":114.72,"fill":"rgb(0,0,0)","stroke":null,"strokeWidth":1,"strokeDashArray":null,"strokeLineCap":"butt","strokeDashOffset":0,"strokeLineJoin":"miter","strokeMiterLimit":4,"scaleX":1,"scaleY":1,"angle":0,"flipX":false,"flipY":false,"opacity":1,"shadow":null,"visible":true,"clipTo":null,"backgroundColor":"","fillRule":"nonzero","paintFirst":"fill","globalCompositeOperation":"source-over","transformMatrix":null,"skewX":0,"skewY":0,"text":"You 왜왜 안될까 되는데??","fontSize":18,"fontWeight":"normal","fontFamily":"Montserrat","fontStyle":"normal","lineHeight":1.16,"underline":false,"overline":false,"linethrough":false,"textAlign":"left","textBackgroundColor":"","charSpacing":0,"minWidth":20,"splitByGrapheme":false,"styles":{}}],"background":"#ffffff"}'
+
+canvas.loadFromJSON(json, canvas.renderAll.bind(canvas), function(o, object) {
+    fabric.log(o, object);
+});
