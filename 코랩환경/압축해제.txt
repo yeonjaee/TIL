@@ -1,3 +1,0 @@
-from zipfile import ZipFile
-with ZipFile('/content/drive/MyDrive/CartoonGan/trainA.zip') as ta:
-  ta.extractall('/content/drive/MyDrive/CartoonGan/datasets/datasetA/trainA')
