@@ -17,7 +17,11 @@
     - 단순 연결 리스트는 다음 데이터를 가리키는 링크가 더 필요
     - 노드는 데이터와 링크로 구성된 항목
 
+<<<<<<< HEAD
     > ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbnjuRH%2FbtrWbcE6VHh%2FIcDi0G0pvuciLrHo3upyCk%2Fimg.png)
+=======
+    > <https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbnjuRH%2FbtrWbcE6VHh%2FIcDi0G0pvuciLrHo3upyCk%2Fimg.png>
+>>>>>>> ac582b7 (u img)
 
   - 노드 삽입
     
