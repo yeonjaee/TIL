@@ -17,17 +17,19 @@
     - 단순 연결 리스트는 다음 데이터를 가리키는 링크가 더 필요
     - 노드는 데이터와 링크로 구성된 항목
 
-    <img src="assets/04_single%20linked%20list/image-20220103140837916.png" alt="image-20220103140837916" style="zoom:50%;" />
+    > https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbnjuRH%2FbtrWbcE6VHh%2FIcDi0G0pvuciLrHo3upyCk%2Fimg.png
 
   - 노드 삽입
-    - <img src="assets/04_single%20linked%20list/image-20220103140922160.png" alt="image-20220103140922160" style="zoom:50%;" />
-
+    
+    > https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FeIsFGw%2FbtrWbT5Q8eh%2F7KFTzdbiHCt2V4ovgmRlwK%2Fimg.png
   
-
   
-
+  
+  
+  
   - 노드 삭제
-    - <img src="assets/04_single%20linked%20list/image-20220103140938406.png" alt="image-20220103140938406" style="zoom:50%;" />
+    
+    > https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FEeWZU%2FbtrWbq4bR0u%2Fush0QWXyTSPDjc96goD0Xk%2Fimg.png
 
 ---
 
@@ -49,7 +51,7 @@ node1 = Node()
 node1.data='다현'
 ```
 
-> ![image-20220103141401912](assets/04_single%20linked%20list/image-20220103141401912.png)
+> https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbmkn0G%2FbtrWbqJQMWf%2FUGCag9auFVG97WUMVKB28k%2Fimg.png
 
 두 번째 노드 생성 및 첫 번재 노드와 연결
 
@@ -59,7 +61,7 @@ node2.data = '정연'
 node1.link = node2	# 첫 번째 노드의 링크에 두 번째 노드를 연결
 ```
 
-> ![image-20220103141510427](assets/04_single%20linked%20list/image-20220103141510427.png)
+> https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcLQs3n%2FbtrWeYEz2nF%2FHZAKA5LcJIBrTZTxoiA0Lk%2Fimg.png
 
 데이터가 5개인 단순 연결 리스트 생성
 
@@ -95,7 +97,7 @@ print(node1.link.link.link.data, end = ' ')
 print(node1.link.link.link.link.data, end = ' ')
 ```
 
-> ![image-20220103150348052](assets/04_single%20linked%20list/image-20220103150348052.png)
+> https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fl19xs%2FbtrWdoDRodn%2FGJkKY4GpKpq9E6EHK9XXV1%2Fimg.png
 
 print 부분 과정을 간략하게
 
