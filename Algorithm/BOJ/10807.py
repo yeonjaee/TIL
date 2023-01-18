@@ -3,7 +3,7 @@
 // 시간: 44 ms
 // 코드길이: 91 B
 
-N = int(input());
-e = list(map(int, input().split()));
-v = int(input());
-print(e.count(v));
+N = int(input())
+e = list(map(int, input().split()))
+v = int(input())
+print(e.count(v))
