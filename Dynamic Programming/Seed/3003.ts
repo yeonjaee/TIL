@@ -3,7 +3,7 @@
 // 시간: 132 ms
 // 쾨드길이: 132 B
 
-
+// @ts-ignore
 const fs = require('fs');
 
 const input = fs.readFileSync('/dev/stdin').toString().split(' ')
