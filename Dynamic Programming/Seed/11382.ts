@@ -2,7 +2,7 @@
 // 메모리: 9324 KB
 // 시간: 120 ms
 // 코드길이: 156 B
-
+// @ts-ignore
 const fs = require('fs');
 
 const input = fs.readFileSync('/dev/stdin').toString().split(' ')

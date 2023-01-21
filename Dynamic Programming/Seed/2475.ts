@@ -3,6 +3,7 @@
 // 시간: 120 ms
 // 코드길이: 206 B
 
+// @ts-ignore
 const input = require('fs').readFileSync(0).toString().split(' ').map(Number);
 
 const func = (n) =>{
