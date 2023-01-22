@@ -201,6 +201,49 @@ console.log(animals.slice());
 // ['ant','bison','camel','duck']
 ```
 
+### sort()
+배열의 요소를 적절한 위치에 정렬한 후 그 배열을 반환한다. 정렬은 stable sort 가 아닐 수 있다. 기본 정렬 순서는 문자열의 유니코드 코드 포인트를 따른다.
+원 배열이 정렬되는 것에 유의. 복사본이 만을어지는 것이 아니다.
+
+arr.sort([compareFunction])
+
+```ts
+// map 을 사용한 정렬
+// 복잡한 요소가 많은 경우, 임시 배열을 하나 만들어서 여기에 실제 정렬에 사용할 값만을 뽑아서 넣어서 이를 정렬하고, 그 결과를 이용해서 실제 정렬을 하는 것
+
+const list = ['Delta', 'alpha', 'CHARLIE', 'bravo'];
+
+// 임시 배열은 위치 및 정렬 값이 있는 객체를 보유한다.
+let mapped = list.map((el,i)=>{
+    return {index:i, value:el.toLowerCase()};
+});
+
+// 축소치를 포함한 매핑된 배열의 sort
+mapped.sort((a,b)=>{
+    return +(a.value > b.value) || +(a.value===b.value) -1;
+});
+
+// 결과 순서를 위한 컨테이너
+const result = mapped.map((el)=>{
+    return list(el.index);
+})
+```
+
+### join()
+배열의 모든 요소를 연결해 하나의 문자열로 만든다.
+arr.join([separator])
+
+```ts
+const elements = ['Fire', 'Air', 'Water'];
+
+console.log(elements.join());
+// "Fire,Air,Water"
+
+console.log(elements.join('-'));
+// "Fire-Air-Water"
+
+```
+
 ---
 ## 판별
 ### every()
