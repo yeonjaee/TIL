@@ -185,6 +185,22 @@ console.log(plants);
 ### push()
 배열의 끝에 하나 이상의 요소를 추가하고, 배열의 새로운 길이를 반환한다.
 
+### slice()
+어떤 배열의 begin 부터 end 까지 (end 미포함)에 대한 얕은 복사본을 새로운 배열 객체로 반환한다. 원본 배열은 바뀌지 않는다.
+// slice([begin[, end]])
+```ts
+const animals = ['ant','bison','camel','duck'];
+
+console.log(animals.slice(2));
+// ['camel','duck']
+
+console.log(animals.slice(-2));
+// ['camel','duck']
+
+console.log(animals.slice());
+// ['ant','bison','camel','duck']
+```
+
 ---
 ## 판별
 ### every()
