@@ -243,6 +243,14 @@ console.log(elements.join('-'));
 // "Fire-Air-Water"
 
 ```
+### shift()
+배열에서 첫 번째 요소를 제거하고, 제거된 요소를 반환한다. 원 배열도 변경된다.
+```ts
+const myFish = ['angel', 'clown', 'mandarin', 'surgeon'];
+const shifted = myFish.shift();
+// shifted: clown,mandarin,surgeon
+// myFish: angel
+```
 
 ---
 ## 판별
