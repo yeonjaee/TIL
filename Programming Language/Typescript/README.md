@@ -252,6 +252,17 @@ const shifted = myFish.shift();
 // myFish: angel
 ```
 
+### charAt() & charCodeAt()
+charAt() : 문자열에서 특정 인덱스에 위치하는 유니코드 단일문자를 반환한다.
+charCodeAt() : 주어진 인덱스에 대한 UTF-16 코드를 나타내는 0부터 65535 사이의 정수를 반환한다.
+```ts
+'ABC'.charCodeAt(0);
+// A
+'ABC'.charCodeAt(0);
+// 65
+
+```
+
 ---
 ## 판별
 ### every()
