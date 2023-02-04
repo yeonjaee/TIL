@@ -263,8 +263,6 @@ charCodeAt() : 주어진 인덱스에 대한 UTF-16 코드를 나타내는 0부�
 
 ```
 
----
-## 판별
 ### every()
 배열 안의 모든 요소가 주어진 판별 함수를 통과하는지 테스트한다. Boolean 을 반환한다.
 ```ts
@@ -312,6 +310,39 @@ if(array.includs(6)){
 }
 // "not exist"
 ```
+
+### reduce()
+배열의 각 요소에 대해 주어진 리듀서 (reducer) 함수를 실행하고, 하나의 결과값을 반환한다.
+```arr.reduce(callback[, initialValue])```
+```ts
+const array = [1,2,3,4];
+const initialValue = 0;
+const sumWithInitial = array.reduce(
+    (accumlator, currentValue) =>
+        accumlator + currentValue,
+    initialValue
+);
+console.log(sumWithInitial);
+// 10
+```
+callback 리듀서 함수는 4 개의 인자를 가진다.
+- 누산기 (acc)
+- 현재 값 (cur)
+- 현재 인덱스 (idx)
+- 원본 배열 (src)
+리듀서 함수의 반환 값은 누산기에 할당되고, 누산기는 순회 중 유지되므로 결국 최종 결과는 하나의 값이 됨.
+```ts
+let arr = [1, 2, 1, 2, 3, 5, 4, 5, 3, 4, 4, 4, 4];
+let result = arr.sort().reduce((accumulator, current) => {
+    const length = accumulator.length
+    if (length === 0 || accumulator[length - 1] !== current) {
+        accumulator.push(current);
+    }
+    return accumulator;
+}, []);
+console.log(result); //[1,2,3,4,5]
+```
+
 
 ---
 ### 비구조화 할당/구조분해 할당
