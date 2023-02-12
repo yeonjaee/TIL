@@ -3,6 +3,7 @@
 // 시간: 256 ms
 // 코드길이: 328 B
 
+// @ts-ignore
 const input = require("fs").readFileSync(0).toString().trim().split("\n");
 
 const n = Number(input[0]);
