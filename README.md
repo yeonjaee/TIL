@@ -9,4 +9,7 @@
 ### Dynamic Programming
 * [Dynamic Programming](./Dynamic%20Programming/) 
 
-<!-- ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yeonjaee&layout=compact&theme=dark&hide=jupyter%20notebook,HTML,scss) -->
+### Angular
+* [Angular](./Angular/)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yeonjaee&layout=compact&theme=dark&hide=jupyter%20notebook,HTML,scss)
