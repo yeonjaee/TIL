@@ -360,3 +360,16 @@ console.log(a1); // 10
 console.log(a2); // 20
 console.log(rest_a); // { a3: 30, a4: 40 }
 ```
+
+---
+### Map() 생성자
+#### * 오직 new 로만 생성할 수 있음. new 없이 호출하면 TypeError 가 발생함.
+맵 객체를 생성함.
+```js
+새로운 Map 생성하기
+const newMap = new Map([
+  [1,'one'],
+  [2,'two'],
+  [3,'three'],
+  ]);
+```
